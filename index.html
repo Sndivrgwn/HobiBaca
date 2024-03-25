@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- FIRST PAGE -->
+    <section id="first-page">
+        <!-- NAVBAR -->
+        <nav id="navbar">
+            <p id="navbar-brand">Hobibaca</p>
+            <ul id="navbar-list">
+                <li id="navbar-list-item">Kutipan</li>
+                <li id="navbar-list-item">Ebook</li>
+                <li id="navbar-list-item">Pojok Ide</li>
+                <li id="navbar-list-item">Games</li>
+            </ul>
+            <button id="navbar-button-user">
+                <img src="https://img.freepik.com/free-photo/foreground-man-with-book-glasses_23-2147643094.jpg?t=st=1711003712~exp=1711007312~hmac=9ea1f4886e94550ed605548b1b0b9f5e02153d9c5803c25e87daa1fec451f00b&w=1060" alt="profile Photo" id="profile">
+                <p id="username">Fahri</p>
+            </button>
+        </nav>
+        <a id="link" href="https://skilvul.com" style="display:none;">skilvul</a>
+        <!-- END NAVBAR -->
+        <!-- MAIN SECTION FIRST PAGE -->
+        <div id="main-section">
+            <div id="background">
+                <img src="https://i.ibb.co/WPWP2SS/intelligent-girl.jpg" alt="" id="first">
+                <img src="https://i.ibb.co/M5LzJVk/lovely-asian-young-lady-portriat-happy-woman-lifestyle-concept-1.jpg" alt="" id="second">
+                <img src="https://i.ibb.co/kSJ3NJ2/open-book-smiley-cup.jpg" alt="" id="third">
+                <img src="https://i.ibb.co/0jVV13D/woman-drinking-tea.jpg" alt="" id="fourth">
+            </div>
+            <div id="main-section-headline">
+                <h1 id="headline">"Tidak ada yang akan menangkapmu <br> karena membaca"</h1>
+                <p id="description">Spongebob Squarepants</p>
+                <center>
+                <button id="cta"><a>Mulai Membaca</a></button>
+                </center>
+            </div>
+        </div>
+        <!-- END MAIN SECTION FIRST PAGE -->
+    </section>
+    <!-- END FIRST PAGE -->
+    <form id="myForm" style="display:none">
+        <input id="name" type="text">
+        <input id="city" type="text">
+        <input id="email" type="email">
+        <input id="zip-code" type="number">
+        <label id="check">Dengan ini saya menyatakan data yang diisi pada form ini adalah benar dan telah sesuai</label>
+        <input id="status" type="checkbox">
+        <button id="submit-form" type="submit">Submit</button>
+        <div id="warning"></div>
+    </form>
+    <!-- SECOND PAGE -->
+    <section id="second-page">
+        <div id="main">
+            <div id="image">
+                <img src="https://i.ibb.co/4Nsj2cz/young-student-looking-book-library.jpg" alt="reading" id="main-image">
+            </div>
+            <div id="text">
+                <h1 id="title">Kenapa kita harus terbiasa membaca?</h1>
+                <p id="subtitle">"seseorang yang suka membaca, akan banyak melihat dan mengetahui"</p>
+                <textarea name="" id="sentences" cols="30" rows="10" disabled>Membaca itu sebenernya gaharus dari buku aja loh! waktu kita nonton film yang ada subtitlenya, waktu baca komposisi sampo atau jajanan, bahkan sekedar liat pamflet dijalan aja termasuk baca loh!</textarea>
+                <br>
+                <button id="change-sentence" onclick="changeSentences()">Ganti</button>
+            </div>
+        </div>
+    </section>
+    <!-- END SECOND PAGE -->
+    <!-- THIRD PAGE -->
+    <section id="third-page">
+        <div id="main">
+            <div id="navigation">
+                <h1 id="title">E-Book</h1>
+                <button id="hyperlink"><a href="">Lihat selengkapnya</a></button>
+            </div>
+            <div id="card-background">
+                <p class="card-headline">kami menyediakan berbagai ebook dari berbagai <br> kategori yang dapat dibaca secara gratis</p>
+                <div id="card-group">
+                    <div id="card">
+                        <h1 class="card-category">Fantasi</h1>
+                        <div id="card-head">
+                            <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1451905281i/28446637.jpg" alt="" id="card-image">
+                        </div>
+                        <div id="card-body" class="card-body">
+                            <div id="card-text" class="card-text">
+                                <p id="title">Hujan</p>
+                                <div id="information" class="information">
+                                    <p id="author"><span class="autor-desc">Author</span> : <br>Tere Liye</p>    
+                                    <p id="description-card"><span class="autor-desc">Deskripsi</span> : <br> mengisahkan percintaan dan perjuangan hidup Lail.</p>
+                                    <p id="year"><span class="autor-desc">Tahun</span> : <br>2016</p>
+                                    <p id="viewer"><span class="autor-desc">Dibaca oleh</span> : <br> 5.261 orang</p>
+                                </div>
+                            </div>
+                            <button id="download" class="download">Download</button>
+                            <button id="read" class="read">Baca</button>
+                        </div>
+                    </div>
+                    <div id="card">
+                        <h1 class="card-category two">Fantasi</h1>
+                        <div id="card-head">
+                            <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1451905281i/28446637.jpg" alt="" id="card-image">
+                        </div>
+                        <div id="card-body" class="card-body">
+                            <div id="card-text" class="card-text">
+                                <p id="title">Hujan</p>
+                                <div id="information" class="information">
+                                    <p id="author"><span class="autor-desc">Author</span> : <br>Tere Liye</p>    
+                                    <p id="description-card"><span class="autor-desc">Deskripsi</span> : <br> mengisahkan percintaan dan perjuangan hidup Lail.</p>
+                                    <p id="year"><span class="autor-desc">Tahun</span> : <br>2016</p>
+                                    <p id="viewer"><span class="autor-desc">Dibaca oleh</span> : <br> 5.261 orang</p>
+                                </div>
+                            </div>
+                            <button id="download" class="download">Download</button>
+                            <button id="read" class="read">Baca</button>
+                        </div>
+                    </div>
+                    <div id="card">
+                        <h1 class="card-category three">Fantasi</h1>
+                        <div id="card-head">
+                            <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1451905281i/28446637.jpg" alt="" id="card-image">
+                        </div>
+                        <div id="card-body" class="card-body">
+                            <div id="card-text" class="card-text">
+                                <p id="title">Hujan</p>
+                                <div id="information" class="information">
+                                    <p id="author"><span class="autor-desc">Author</span> : <br>Tere Liye</p>    
+                                    <p id="description-card"><span class="autor-desc">Deskripsi</span> : <br> mengisahkan percintaan dan perjuangan hidup Lail.</p>
+                                    <p id="year"><span class="autor-desc">Tahun</span> : <br>2016</p>
+                                    <p id="viewer"><span class="autor-desc">Dibaca oleh</span> : <br> 5.261 orang</p>
+                                </div>
+                            </div>
+                            <button id="download" class="download">Download</button>
+                            <button id="read" class="read">Baca</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="police-line" style="position:absolute; width: 100%;height: 70px;background: repeating-linear-gradient(-55deg,yellow,#222 10px,yellow 10px,#333 20px);"><div>
+    </section>
+    <!-- END THIRD PAGE -->
+    <section class="statistics">
+      <div class="group">
+        <div class="left"> 
+            <h1 id="title">Banyak pengguna yang bergabung dan saling bertukar aspirasi disini</h1>
+            <div class="the-statistics">
+                <div class="item one">
+                    <ion-icon name="person-outline"></ion-icon>
+                    <div class="text">
+                        <p class="number">1234</p>
+                        <h6 class="title-stat">Pengguna aktif<h6>
+                    </div>
+                </div>
+                <div class="item two">
+                    <ion-icon name="chatbubble-outline"></ion-icon>
+                    <div class="text">
+                        <p class="number">398</p>
+                        <h6 class="title-stat">Diskusi<h6>
+                    </div>
+                </div>
+                <div class="item three">
+                    <ion-icon name="laptop-outline"></ion-icon>
+                    <div class="text">
+                        <p class="number">234</p>
+                        <h6 class="title-stat">Cerita dari pengguna<h6>
+                    </div>
+                </div>
+                <div class="item four">
+                    <ion-icon name="book-outline"></ion-icon>
+                    <div class="text">
+                        <p class="number">500</p>
+                        <h6 class="title-stat">ebook gratis<h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <img src="https://i.ibb.co/XzGHNn2/faceless-man-using-laptop-bed.jpg" alt="">
+        </div>
+      </div>
+    </section>
+    <!-- FOURTH PAGE -->
+    <section id="fourth-page">
+        <h1 id="title-page">Pojok ide</h1>
+        <div id="background">
+            <p id="description-page">Disini kalan bisa mengemukakan ide-ide terpendam kalian! dengan adanya fitur pojok diskusi kalian bisa saling bertukar ide dengan pengguna lain! kalian juga dapat menuangkan kreativitas dengan membuat cerita kalian sendiri!</p>
+            <div id="grouping">
+                <div id="left-side">
+                    <h1 id="title">Pojok Diskusi</h1>
+                    <div id="frame">
+                    <div id="profile">
+                        <img src="https://img.freepik.com/free-photo/foreground-man-with-book-glasses_23-2147643094.jpg?t=st=1711003712~exp=1711007312~hmac=9ea1f4886e94550ed605548b1b0b9f5e02153d9c5803c25e87daa1fec451f00b&w=1060" id="photo">
+                        <p id="name">Rafli</p>
+                    </div>
+                    <div id="idea">
+                        <p id="the-idea">baca komik sambil menunggu kereta datang emang yang terbaik! pengalaman membaca terbaik kalian waktu apa guys?</p>
+                    </div>
+                    <div id="reply" class="reply">
+                        <i class="fa-solid fa-reply icon"></i>
+                        <div id="profile">
+                        <img src="https://img.freepik.com/free-photo/foreground-man-with-book-glasses_23-2147643094.jpg?t=st=1711003712~exp=1711007312~hmac=9ea1f4886e94550ed605548b1b0b9f5e02153d9c5803c25e87daa1fec451f00b&w=1060" width="40px" height="40px" class="photo">
+                            <p id="name">Sandi</p>
+                        </div>
+                    </div>
+                        <div id="the-replied">
+                            <p id="the-reply">Tentu waktu dikamar sendirian! itu yang terbaik apalagi kalau hujan!</p>
+                        </div>
+                        </div>
+                    <button id="see-more" class="see-more">Mulai Diskusi</button>
+                </div>
+                <div id="right-side">
+                    <h1 id="title">Pojok Cerita</h1>
+                    <div id="story">
+                        <p id="title">The Lazy Cat</p>
+                        <div id="user">
+                            <p id="name">Nurkalam</p>
+                            <hr>
+                            <p id="genre">slice of life</p>
+                            <hr>
+                            <p id="date-created">4 jam yang lalu</p>
+                        </div>
+                        <div id="the-story">"Namaku Jinwoo, aku hidup bersama puluhan kucing karena aku memang suka kucing, tetapi dari sekian banyaknya kucing yang pernah kurawat hanya satu ini yang paling membuatku kesal. Namanya beru, matanya berwarna biru, ia adalah kucing kampung campuran anggora, bulunya yang berwarna jingga sangat halus dan tebal, tetapi dibalik keimutannya ia sangatlah malas bahkan untuk mandi sekalipun. Hari yang ia lewati se..."</div>
+                        <button id="see-more" class="see-more">Lihat cerita</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END FOURTH PAGE -->
+    <!-- FIFTH PAGE -->
+    <section id="fifth-page">
+        <h1 class="title">Cari Kata Yang Hilang!</h1>
+        <div class="textarea">
+            <h1 id="text-game"></h1>
+        </div>
+        <div class="answer">
+            <input type="text" class="the-answer" placeholder="Jawab disini" id="jawaban">
+            <button class="periksa btn" value="ulangi" id="restart" onclick="restart()">
+             Ulangi</button>
+            <button class="kirim btn" id="kirim" onclick="cekJawaban()">
+             Kirim</button>
+        </div>
+        <div class="display" id="true">
+        <div class="position">
+        <div class="true-or-false">
+            <i class="fa-solid fa-check"></i>
+            <h1>Benar</h1>
+            <i class="fa-solid fa-circle-xmark hilang" id="hilang" onclick="hilang()"></i>
+        </div>
+        </div>
+        </div>
+    </section>
+    <!-- END FIFTH PAGE -->
+    <!-- FOOTER -->
+   <footer class="footer">
+    <div class="waves">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
+    </div>
+    <ul class="social-icon">
+      <li class="social-icon__item"><a class="social-icon__link" href="https://web.facebook.com/sandi.virgiawan.923">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="https://github.com/Sndivrgwn">
+          <ion-icon name="logo-github"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" id="" href="">
+          <ion-icon name="globe-outline"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="https://www.instagram.com/sndivrgwn_/">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a></li>
+    </ul>
+    <ul class="menu" style="gap: 10px; ">
+      <li class="menu__item"><p class="menu__link" style="font-size: 20px;">Kutipan</p></li>
+      <li class="menu__item"><p class="menu__link" style="font-size: 20px;" >Ebook</p></li>
+      <li class="menu__item"><p class="menu__link" style="font-size: 20px;">Pojok Ide</p></li>
+      <li class="menu__item"><p class="menu__link" style="font-size: 20px;">Games</p></li>
+
+    </ul>
+    <p>2024 Sandi Virgiawan | HobiBaca</p>
+  </footer>
+
+  
+
+    <script src="script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- END FOOTER -->
+</body>
+</html>
